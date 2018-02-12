@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension point = "org.eclipse.ui.popupMenus">
+     <!--objectContribution
+        id="OPE.contribution1"
+        objectClass="org.eclipse.core.resources.IFile">
+	    <action id="OPE.action1"
+	       label="Explore"
+	       menubarPath="additions"
+	       class="ope.popup.actions.OPEAction"	
+	       enablesFor="1">
+	    </action>
+	 </objectContribution!-->	 
+      <objectContribution
+            objectClass="org.eclipse.jdt.internal.core.SourceType"
+            id="ExploreExtension.contribution1">
+        <action id="OPE.action1"
+	       label="%action.label"
+	       icon="./icons/explorer.gif"
+	       menubarPath="additions"
+	       class="ope.popup.actions.OPEAction"	
+	       enablesFor="1">
+	    </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.core.internal.resources.Resource"
+            id="ExploreExtension.contribution1">
+         <action id="OPE.action1"
+	       label="%action.label.0"
+	       icon="./icons/explorer.gif"
+	       menubarPath="additions"
+	       class="ope.popup.actions.OPEAction"	
+	       enablesFor="1">
+	    </action>
+      </objectContribution>
+      <objectContribution
+            objectClass="org.eclipse.jdt.internal.core.Openable"
+            id="ExploreExtension.contribution1">
+         <action id="OPE.action1"
+	       label="%action.label.1"
+	       icon="./icons/explorer.gif"
+	       menubarPath="additions"
+	       class="ope.popup.actions.OPEAction"	
+	       enablesFor="1">
+	    </action>
+      </objectContribution>
+   </extension>
+</plugin>
